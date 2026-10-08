@@ -12,4 +12,6 @@ def ayman(request):
     return HttpResponse("hello, Ayman!")
 
 def greet(request, name):
-    return HttpResponse(f"hello, {name}!")
+    return render(request, "hello/greet.html", {
+        "name": name.capitalize()
+    })
