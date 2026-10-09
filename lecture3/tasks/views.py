@@ -8,3 +8,7 @@ def index(request):
     return render(request, "tasks/index.html", {
         "tasks": tasks
     })
+
+# add tasks
+def add(request):
+    return render(request, "tasks/add.html")
