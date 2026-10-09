@@ -6,17 +6,13 @@
     <form action="{% url 'tasks:add' %}" method="post">
 
         {% csrf_token %}
+        {{ form }}
 
-        <input 
-        type="text"
-        name="task"
-        placeholder="add a task.."
-        autofocus
-        >
         <input 
         type="submit"
         value="Add"
         >
+
     </form>
     <!-- name space collesion may happen below without using app_name -->
     <a class="view-tasks" href="{% url 'tasks:index' %}">View Tasks</a>
