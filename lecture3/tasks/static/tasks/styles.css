@@ -1,6 +1,36 @@
+html {
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 ul {
     list-style: none;
 }
+
 ul li {
     color: blue;
+}
+
+a.add-task {
+    text-decoration: none;
+    color: lightslategray;
+}
+
+a.view-tasks {
+    text-decoration: none;
+    color: lightslategray;
+    display: block;
+    margin-top: 60px;
+}
+
+form input[type="text"] {
+    padding: 10px 20px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
 }
